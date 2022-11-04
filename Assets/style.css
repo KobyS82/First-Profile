@@ -1,10 +1,13 @@
-/*
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+:root {
+  --white: hsl(0, 0%, 100%);
 
+};
+/* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+/*
 html,
 body,
 .wrapper {
@@ -13,26 +16,23 @@ body,
   padding: 0;
 }
 */
+
 body {
   font-family: sans-serif;
   background-color: green;
 }
 
-.wrapper {
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 20px;
-}
-
 header {
-  text-align: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   padding: 20px;
   padding-top: 0px;
   background-color: hsl(206, 17%, 28%);
 }
 
-h1 {
-    background-color: aquamarine;
+header h1 {
+    background-color: rgb(70, 70, 70);
 }
 
 ul {
@@ -55,11 +55,17 @@ a {
 }
 
 aside {
-    /*will add later*/
+  display: flex;
+  float: left;
+  width: 10%;
+  text-align: left;
 }
 
-/*
+
 .card {
+  display: flex;
+  float: right;
+  flex-direction: column;
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -69,5 +75,12 @@ aside {
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
+  width: 300px
 }
-*/
+
+.img-big{
+  height: 100px;
+  width: 100%;
+
+}
+
