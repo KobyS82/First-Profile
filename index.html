@@ -16,18 +16,17 @@
 
     <!-- Navbar -->
     <nav>
-        <ul> <!--ADD PAGE SCROLL-->
-            <li><a href="#about-me?>">About Me</a></li>
-            <li><a href="">Work</a></li>
-            <li><a href="">Contact Me</a></li>
-            <li><a href="">Resume</a></li>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact-me">Contact Me</a></li>
         </ul>
     </nav>
 
     <!-- Body -->
     <main>
         <!-- About Me-->
-        <section class ="felx-row">
+        <section id="about-me" class="felx-row"> <!--ADD @MEDIA FOR MIN MAX SIZE-->
             <section>
                 <div class="Lcard">
                     <h2>About Me</h2>
@@ -42,7 +41,7 @@
         </section>
 
         <!--Work-->
-        <section class ="felx-row">
+        <section id="work" class="felx-row">
             <section>
                 <div class="Lcard">
                     <h2>My Work</h2>
@@ -51,20 +50,18 @@
 
             <section class ="felx-row Rcard" >
                 <section class="img-box">
-                        <h2>My Work</h2>
-                        <a href="" target="_blank"><img class="img-big" src="./Assets/Surf-big-wave.jpeg" alt="Surfing in a sunset"></a>
+                        <h2>Horiseon Website</h2>
+                        <p>Refactoring code for accesibility</p>
+                        <a href="https://kobys82.github.io/Week-1-challenge/" target="_blank"><img class="img-big" src="./Assets/Horiseon-picture.JPG" alt="Surfing in a sunset"></a>
                 </section>
-
                 <section class="img-box">
                     <h2>Surf Report</h2>
                     <img class="img-big" src="./Assets/Surf-big-wave.jpeg" alt="Surfing in a sunset">
                 </section>
-
                 <section class="img-box">
                     <h2>LED Wall</h2>
                     <img class="img-big" src="./Assets/_95146618_bills.jpg" alt="Head with notes on it">
                 </section>
-
                 <section class="img-box">
                     <h2>Calculator</h2>
                 </section>
@@ -72,8 +69,18 @@
         </section>
 
         <!--Contact Me-->
-        <section>
+        <section id="contact-me" class="felx-row">
+            <section>
+                <div class ="Lcard">
+                    <h2>Contact Me</h2>
+                </div>
+            </section>
 
+            <section class="flex-row Rcard">
+                <p>888-888-8888</p>
+                <p>kobys@examle.com</p>
+                <p>GitHub</p>
+            </section>
         </section>
 
         <!-- Sidebar 
