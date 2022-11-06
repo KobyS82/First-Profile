@@ -2,7 +2,7 @@
   --white: hsl(0, 0%, 100%);
 
 };
-/* {
+/* *{
 padding: 0;
 margin: 0;
 box-sizing: border-box;
@@ -15,67 +15,111 @@ body,
   margin: 0;
   padding: 0;
 }
+
+
+@media all  {
+  .aside1 { order: 1; }
+  .aside2 { order: 4; }
+  .article2 { order: 2; }  
+}
+
 */
 
 body {
   font-family: sans-serif;
-  background-color: green;
+  background-color:hsl(206, 17%, 28%);
+  margin: 0 auto;
 }
 
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
-  padding: 20px;
+  padding-left: 15px;
   padding-top: 0px;
   background-color: hsl(206, 17%, 28%);
 }
 
 header h1 {
-    background-color: rgb(70, 70, 70);
+  font-size: 60px;
+  background-color: rgb(70, 70, 70);
 }
+
 
 ul {
     display: flex;
     justify-content: flex-end;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     background-color:aqua;
-}
-
-li {
-
-    background-color: #829e1c;
 }
   
 a {
     padding: 8px;
-    background-color: #9e1c1c;
 }
 
-aside {
+.felx-row{
   display: flex;
-  float: left;
-  width: 10%;
-  text-align: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  align-items: center;
 }
 
-
-.card {
+.Rcard {
+  /*
   display: flex;
   float: right;
-  flex-direction: column;
+  */
+  /* flex-direction: column; */
+  background-color: hsl(0, 0%, 100%);
+  /* border-radius: 5px;
+  border-width: 1px; */
+  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px; */
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  /* margin: 0 auto; */
+  /* max-width: 800px; */
+  padding: 30px 40px;
+  width: 70%;
+  border-left: 2px solid;
+
+}
+
+
+.Lcard {
+  /* display: flex;
+  float: left; */
+  /* flex-direction: column; */
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  /* font-size: 18px; */
+  margin: 0 auto;
+  /* max-width: 800px; */
+  padding: 30px 40px;
+  width: 30%;
+}
+
+
+.card{
+  /* display: flex;
+  flex-wrap: wrap; */
+  /* flex-direction: row; */
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
   font-size: 18px;
-  margin: 0 auto;
-  max-width: 800px;
+  /* margin: 0 auto; */
+  /* max-width: 800px; */
   padding: 30px 40px;
-  width: 300px
+  width: 300px;
 }
 
 .img-big{
@@ -84,3 +128,7 @@ aside {
 
 }
 
+.img-box{
+  width: 20%;
+  margin-left: 10px;
+}
