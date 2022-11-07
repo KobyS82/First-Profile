@@ -101,7 +101,7 @@ a {
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
   color: hsl(206, 17%, 28%);
   margin: 0 auto;
-  padding: 30px 40px;
+  padding: 30px 60px;
   width: 30%;
 }
 
@@ -123,12 +123,16 @@ a {
 }
 
 .img-big{
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
-
 }
 
 .img-box{
   width: 20%;
+  margin-left: 10px;
+}
+
+.first-img-box{
+  height: 500px;
   margin-left: 10px;
 }
