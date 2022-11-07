@@ -2,34 +2,14 @@
   --white: hsl(0, 0%, 100%);
 
 };
-/* *{
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-}
-/*
-html,
-body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-
-@media all  {
-  .aside1 { order: 1; }
-  .aside2 { order: 4; }
-  .article2 { order: 2; }  
-}
-
-*/
 
 body {
   font-family: sans-serif;
   background-color:hsl(206, 17%, 28%);
   margin: 0 auto;
 }
+
 
 header {
   display: flex;
@@ -39,6 +19,7 @@ header {
   padding-top: 0px;
   background-color: hsl(206, 17%, 28%);
 }
+
 
 header h1 {
   font-size: 60px;
@@ -55,11 +36,13 @@ ul {
     background-color:aqua;
 }
   
+
 a {
     padding: 8px;
 }
 
-.felx-row{
+/* Seections cards together */
+.flex-row{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -68,17 +51,8 @@ a {
   align-items: center;
 }
 
+/* Style of the right cards */
 .Rcard {
-/*   
-  display: flex;
-  float: right;
-  */
-  /* flex-direction: column; */
-  /* border-radius: 5px;
-  border-width: 1px; */
-  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px; */
-  /* margin: 0 auto; */
-  /* max-width: 800px; */
   background-color: hsl(0, 0%, 100%);
   color: hsl(206, 17%, 28%);
   font-size: 18px;
@@ -88,13 +62,8 @@ a {
 
 }
 
-
+/* Style of the left cards */
 .Lcard {
-  /* display: flex;
-  float: left; */
-  /* flex-direction: column; */
-  /* font-size: 18px; */
-  /* max-width: 800px; */
   background-color: hsl(0, 0%, 100%);
   border-radius: 5px;
   border-width: 1px;
@@ -105,34 +74,21 @@ a {
   width: 30%;
 }
 
-
-.card{
-  /* display: flex;
-  flex-wrap: wrap; */
-  /* flex-direction: row; */
-  /* margin: 0 auto; */
-  /* max-width: 800px; */
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
-  padding: 30px 40px;
-  width: 300px;
-}
-
+/* Sets images to the witdth of their box */
 .img-big{
-  /* height: 100px; */
   width: 100%;
 }
 
+/* Makes the boxes that hold the images look better */
 .img-box{
-  width: 20%;
+  margin-top: 30px;
+  width: 40%;
   margin-left: 10px;
 }
 
+/* Sets the first image to be larger than the rest */
 .first-img-box{
   height: 500px;
   margin-left: 10px;
 }
+
